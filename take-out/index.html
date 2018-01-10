@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>结账了</title>
+	
+	<link rel="stylesheet" type="text/css" href="layui/css/layui.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script src="jquery-2.2.4.js"></script>
+	<script src="layui/layui.js"></script>
+	<script src="index.js"></script>
+
+</head>
+<body>
+	<content>
+		<aside class="imgDiv">
+			<img src="img/img.png" alt="">
+		</aside>
+		<div class="frameDiv frameDivshow">
+			<div class="addDiv">
+				<input type="button" id="add" value="添加用餐人员">
+			</div>
+			<div class="moneyDiv">
+				<input type="text" class="money" placeholder="1.请输入点餐金额(数字)">
+				<input type="text" class="money" placeholder="2.请输入点餐金额(数字)">
+			</div>
+			<div class="additionDiv">
+				<input type="text" id="red_packet" placeholder="红包(数字)">
+				<input type="text" id="delivery" placeholder="派送费(数字)">
+			</div>
+			<div class="addDiv">
+				<input type="button" id="total" value="结算">
+			</div>
+		</div>
+		<div class="frameDiv frameDivhide">
+			<div class="addDiv">
+				<input type="button" value="结账啦">
+			</div>
+			<div class="totalS">
+				
+				<div class="title">
+					<span class="fl">点单金额</span>
+					<span class="fr">实付金额</span>
+				</div>
+				<ul id="hide_ul">
+				</ul>
+				<div class="fooder title">
+					<span class="fl">合计<i id="condition"></i></span>
+					<span class="fr" id="totalS"></span>
+				</div>
+			</div>
+		</div>
+		<footer class="frameDiv fooderDiv">
+			<h3>使用规则</h3>
+			<ol>
+				<li>默认四舍五入小数点后两位</li>
+				<li>结算包含红包和外送费统计</li>
+				<li>实付已包含红包外送费运算</li>
+				<li>如有问题请反馈</li>
+			</ol>
+		</footer>
+	</content>
+</body>
+</html>
